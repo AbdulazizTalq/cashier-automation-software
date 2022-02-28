@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="501.0" prefWidth="736.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mainproject.InsertCashersController">
+   <children>
+      <GridPane layoutX="160.0" layoutY="143.0" prefHeight="264.0" prefWidth="408.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="292.0" minWidth="10.0" prefWidth="186.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="460.0" minWidth="10.0" prefWidth="215.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="59.0" minHeight="10.0" prefHeight="59.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="76.0" minHeight="10.0" prefHeight="72.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="74.0" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="66.0" minHeight="10.0" prefHeight="62.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label prefHeight="27.0" prefWidth="192.0" text="Name:">
+               <font>
+                  <Font name="Bell MT Bold" size="22.0" />
+               </font>
+            </Label>
+            <Label prefHeight="27.0" prefWidth="190.0" text="Phone number:" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Bell MT Bold" size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtPhone_number" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label prefHeight="27.0" prefWidth="205.0" text="ID:" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Bell MT Bold" size="22.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Label>
+            <Label prefHeight="27.0" prefWidth="201.0" text="Paasword:" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Bell MT Bold" size="22.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtUser_id" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="txtPassword" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="txtName" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <Button id="btnOut" fx:id="btnSave" layoutX="468.0" layoutY="422.0" mnemonicParsing="false" onAction="#Save" prefHeight="33.0" prefWidth="100.0" style="-fx-background-radius: 4em;" stylesheets="@Stylesheet.css" text="Save" />
+      <AnchorPane prefHeight="134.0" prefWidth="736.0" style="-fx-background-color: linear-gradient(to bottom, #8d5cd0, #8877dd, #898ee5, #91a4e9, #a0b8eb, #b1c4ed, #c2cfee, #d2dbf0, #dfe3f4, #ebecf7, #f6f5fb, #ffffff);" AnchorPane.bottomAnchor="367.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="23.0" layoutY="-8.0" prefHeight="109.0" prefWidth="107.0" style="-fx-text-fill: linear-gradient(to bottom, #8d5cd0, #8877dd, #898ee5, #91a4e9, #a0b8eb, #b1c4ed, #c2cfee, #d2dbf0, #dfe3f4, #ebecf7, #f6f5fb, #ffffff);" text="S+" AnchorPane.leftAnchor="23.0" AnchorPane.topAnchor="-8.0">
+               <font>
+                  <Font name="Bodoni MT" size="84.0" />
+               </font>
+            </Label>
+            <Label layoutX="271.0" layoutY="47.0" text="Insert Casher" AnchorPane.leftAnchor="271.0" AnchorPane.topAnchor="34.0">
+               <font>
+                  <Font name="Lucida Bright Regular" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
